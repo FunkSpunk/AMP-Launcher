@@ -1,4 +1,4 @@
-# AMP Launcher ⚡🎵
+# AMP Launcher | Your phone. Your music. Nothing else. ⚡🎵
 
 > A dedicated, high-performance Android system launcher that transforms your phone into an immersive, dedicated music player experience.  
 > Fully supports **Android 4.4 KitKat (API 19)** through the latest **Android 17 (API 35+)**.
