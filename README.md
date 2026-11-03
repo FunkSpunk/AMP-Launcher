@@ -3,7 +3,9 @@
 > A dedicated, high-performance Android system launcher that transforms your phone into an immersive, dedicated music player experience.  
 > Fully supports **Android 4.4 KitKat (API 19)** through the latest **Android 17 (API 35+)**.
 >
-> <img width="1220" height="3392" alt="Screenshot_2026-11-03-21-22-20-784_com musiclauncher" src="https://github.com/user-attachments/assets/7a98e156-ae9e-44af-981c-89a7ca0e1731" />
+> Give your old Android device a new life as a dedicated music player. AMP Launcher is a lightweight, resource-friendly system launcher that puts your favourite music app front and centre, hiding the default home screen and app drawer. With minimal system overhead, it keeps your device focused on music, offering a smoother, more responsive experience even on older and slower hardware.
+>
+> <img width="728" height="1920" alt="image" src="https://github.com/user-attachments/assets/aa0c553d-e0ed-41ee-ba7e-a0fcc75ea856" />
 
 
 
