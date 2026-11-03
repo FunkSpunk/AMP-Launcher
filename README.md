@@ -3,7 +3,7 @@
 > A dedicated, high-performance Android system launcher that transforms your phone into an immersive, dedicated music player experience.  
 > Fully supports **Android 4.4 KitKat (API 19)** through the latest **Android 17 (API 35+)**.
 >
-> <img width="1220" height="3392" alt="Screenshot_2026-11-03-21-22-20-784_com musiclauncher" src="https://github.com/user-attachments/assets/7a98e156-ae9e-44af-981c-89a7ca0e1731" /> <img width="1220" height="2656" alt="Screenshot_2026_11_03_21_22_10_114_com_google_android_permissioncontroller" src="https://github.com/user-attachments/assets/d63ec86c-7628-4b1f-870e-f1d517494a4a" />
+> <img width="1220" height="3392" alt="Screenshot_2026-11-03-21-22-20-784_com musiclauncher" src="https://github.com/user-attachments/assets/7a98e156-ae9e-44af-981c-89a7ca0e1731" />
 
 
 
