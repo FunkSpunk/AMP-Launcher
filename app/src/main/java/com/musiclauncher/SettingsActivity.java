@@ -167,8 +167,15 @@ public class SettingsActivity extends AppCompatActivity {
         mSwitchPersistentNotif.setChecked(mPrefs.isPersistentNotifEnabled());
         mSwitchKeepInRecents.setChecked(mPrefs.isKeepInRecentsEnabled());
 
+        String versionName;
+        try {
+            versionName = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
+        } catch (Exception e) {
+            versionName = "0.1.2 Beta";
+        }
+
         String versionInfo = getString(R.string.version_info,
-                "1.0.0",
+                versionName,
                 Build.VERSION.RELEASE,
                 Build.VERSION.SDK_INT);
         mTvVersionInfo.setText(versionInfo);
