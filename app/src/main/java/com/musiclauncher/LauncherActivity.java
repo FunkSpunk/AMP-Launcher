@@ -16,6 +16,9 @@ import android.widget.TextView;
 import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.musiclauncher.adapter.MusicAppAdapter;
 import com.musiclauncher.service.LauncherNotificationService;
@@ -71,6 +74,14 @@ public class LauncherActivity extends AppCompatActivity {
 
     private void initViews() {
         mRootView = findViewById(R.id.launcher_root);
+        if (mRootView != null) {
+            ViewCompat.setOnApplyWindowInsetsListener(mRootView, (v, windowInsets) -> {
+                Insets insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
+                v.setPadding(insets.left, insets.top, insets.right, insets.bottom);
+                return windowInsets;
+            });
+        }
+
         mIvMusicIcon = findViewById(R.id.iv_music_app_icon);
         mTvMusicName = findViewById(R.id.tv_music_app_name);
         mTvMusicSubtitle = findViewById(R.id.tv_music_subtitle);

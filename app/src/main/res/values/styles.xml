@@ -55,7 +55,6 @@
 
     <!-- Fullscreen Launcher Themes -->
     <style name="Theme.AMPLauncher.Fullscreen" parent="Theme.AMPLauncher">
-        <item name="android:windowFullscreen">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowShowWallpaper">false</item>
