@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/spacing_small"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/iv_grid_app_icon"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="@dimen/spacing_tiny"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/tv_grid_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text_primary"
+        android:textSize="13sp"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+</LinearLayout>

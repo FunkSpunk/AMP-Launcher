@@ -1,0 +1,50 @@
+<resources>
+    <!-- Default / Emerald Theme -->
+    <color name="primary">#1DB954</color>
+    <color name="primary_variant">#169C46</color>
+    <color name="secondary">#BB86FC</color>
+    <color name="secondary_variant">#3700B3</color>
+
+    <!-- Theme Palettes -->
+    <color name="theme_emerald">#1DB954</color>
+    <color name="theme_emerald_variant">#169C46</color>
+
+    <color name="theme_cyan">#00E5FF</color>
+    <color name="theme_cyan_variant">#00B4D8</color>
+
+    <color name="theme_amber">#FF9800</color>
+    <color name="theme_amber_variant">#F57C00</color>
+
+    <color name="theme_purple">#BB86FC</color>
+    <color name="theme_purple_variant">#9945FF</color>
+
+    <color name="theme_crimson">#FF334B</color>
+    <color name="theme_crimson_variant">#D32F2F</color>
+
+    <color name="theme_ocean">#2979FF</color>
+    <color name="theme_ocean_variant">#1565C0</color>
+
+    <color name="theme_amoled">#FFFFFF</color>
+    <color name="theme_amoled_variant">#B3B3B3</color>
+
+    <!-- Backgrounds -->
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="surface_variant">#282828</color>
+    <color name="card_stroke">#383838</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3B3B3</color>
+    <color name="text_hint">#757575</color>
+
+    <!-- Accents -->
+    <color name="accent_blue">#2196F3</color>
+    <color name="accent_amber">#FFC107</color>
+    <color name="accent_cyan">#00E5FF</color>
+
+    <!-- Translucent overlays -->
+    <color name="scrim_dark">#99000000</color>
+    <color name="scrim_light">#1AFFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

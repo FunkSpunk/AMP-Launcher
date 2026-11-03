@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/spacing_medium"
+        android:paddingEnd="@dimen/spacing_medium"
+        android:paddingTop="@dimen/spacing_large"
+        android:paddingBottom="@dimen/spacing_xlarge">
+
+        <!-- Top Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/spacing_large">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/ic_settings"
+                android:contentDescription="@string/launcher_settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:text="@string/settings_title"
+                android:textColor="@color/text_primary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Section: Active Music Player -->
+        <TextView
+            android:id="@+id/tv_section_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/section_player"
+            android:textColor="@color/primary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="@dimen/spacing_tiny" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/spacing_medium"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/spacing_large">
+
+            <ImageView
+                android:id="@+id/iv_current_player_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/ic_music_note"
+                android:contentDescription="@string/selected_player_label" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginEnd="@dimen/spacing_small">
+
+                <TextView
+                    android:id="@+id/tv_current_player_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_app_selected"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_current_player_pkg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tap_to_select"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"
+                    android:ellipsize="middle"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_change_player"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_button_primary"
+                android:text="@string/change_player"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+        <!-- Section: Appearance & Menu Theme -->
+        <TextView
+            android:id="@+id/tv_section_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/section_theme"
+            android:textColor="@color/primary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="@dimen/spacing_tiny" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/spacing_medium"
+            android:layout_marginBottom="@dimen/spacing_large">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/spacing_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/theme_selector_title"
+                        android:textColor="@color/text_primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_current_theme_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/theme_emerald"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_change_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:background="@drawable/bg_button_secondary"
+                    android:text="@string/change_theme"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/theme_selector_desc"
+                android:textColor="@color/text_hint"
+                android:textSize="11sp"
+                android:layout_marginTop="@dimen/spacing_small" />
+        </LinearLayout>
+
+        <!-- Section: Home & Back Button Routing Behavior -->
+        <TextView
+            android:id="@+id/tv_section_behavior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/section_behavior"
+            android:textColor="@color/primary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="@dimen/spacing_tiny" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/spacing_medium"
+            android:layout_marginBottom="@dimen/spacing_large">
+
+            <!-- Toggle: Auto Direct to Music App -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/spacing_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/auto_launch_title"
+                        android:textColor="@color/text_primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/auto_launch_desc"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_auto_launch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/card_stroke"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginBottom="@dimen/spacing_small" />
+
+            <!-- Toggle: Target Now Playing Screen -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/spacing_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fallback_now_playing_title"
+                        android:textColor="@color/text_primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fallback_now_playing_desc"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_target_now_playing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Section: System Integration & Persistent Access -->
+        <TextView
+            android:id="@+id/tv_section_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/section_system"
+            android:textColor="@color/primary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="@dimen/spacing_tiny" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/spacing_medium"
+            android:layout_marginBottom="@dimen/spacing_large">
+
+            <!-- Toggle: Persistent Notification -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/spacing_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/persistent_notif_title"
+                        android:textColor="@color/text_primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/persistent_notif_desc"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_persistent_notif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/card_stroke"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginBottom="@dimen/spacing_small" />
+
+            <!-- Toggle: Keep in Recent Apps -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/spacing_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_in_recents_title"
+                        android:textColor="@color/text_primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_in_recents_desc"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_keep_in_recents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Action: Set as Default Launcher -->
+        <Button
+            android:id="@+id/btn_set_default_home"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_button_secondary"
+            android:text="@string/set_default_launcher"
+            android:textColor="@color/primary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/spacing_medium" />
+
+        <!-- Action: Open App Drawer -->
+        <Button
+            android:id="@+id/btn_settings_open_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_button_secondary"
+            android:drawableStart="@drawable/ic_apps"
+            android:drawablePadding="@dimen/spacing_tiny"
+            android:paddingStart="@dimen/spacing_medium"
+            android:paddingEnd="@dimen/spacing_medium"
+            android:text="@string/open_app_drawer"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/spacing_xlarge" />
+
+        <!-- Footer / Version Info -->
+        <TextView
+            android:id="@+id/tv_version_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/text_hint"
+            android:textSize="11sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>

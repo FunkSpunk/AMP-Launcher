@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/launcher_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:keepScreenOn="false">
+
+    <!-- Main Content Container -->
+    <LinearLayout
+        android:id="@+id/container_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="@dimen/spacing_large"
+        android:paddingEnd="@dimen/spacing_large"
+        android:paddingTop="@dimen/spacing_xxlarge"
+        android:paddingBottom="@dimen/spacing_large">
+
+        <!-- Top Status Indicator -->
+        <TextView
+            android:id="@+id/tv_launcher_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:letterSpacing="0.1"
+            android:textColor="@color/primary"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/spacing_large" />
+
+        <!-- Music Hero Card / Icon Container -->
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:background="@drawable/bg_circle_icon">
+
+            <ImageView
+                android:id="@+id/iv_music_app_icon"
+                android:layout_width="@dimen/icon_size_large"
+                android:layout_height="@dimen/icon_size_large"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_music_note"
+                android:contentDescription="@string/app_name" />
+        </FrameLayout>
+
+        <!-- Selected Music App Name -->
+        <TextView
+            android:id="@+id/tv_music_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_app_selected"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_tiny" />
+
+        <!-- Subtitle / State -->
+        <TextView
+            android:id="@+id/tv_music_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_subtitle"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_size_subtitle"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_xlarge"
+            android:maxLines="3" />
+
+        <!-- Primary Action: Open Now Playing / Music Player -->
+        <Button
+            android:id="@+id/btn_launch_music"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="@string/open_now_playing"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/spacing_medium" />
+
+        <!-- Secondary Action: Select / Change Music App -->
+        <Button
+            android:id="@+id/btn_select_music_app"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_button_secondary"
+            android:text="@string/select_music_app"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/spacing_large" />
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Persistent Launcher Information Tip -->
+        <TextView
+            android:id="@+id/tv_tip_recents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quick_tip"
+            android:textColor="@color/text_hint"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_medium" />
+
+        <!-- Quick Access Bottom Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Launcher Settings Button -->
+            <Button
+                android:id="@+id/btn_open_settings"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_secondary"
+                android:drawableStart="@drawable/ic_settings"
+                android:drawablePadding="@dimen/spacing_tiny"
+                android:paddingStart="@dimen/spacing_medium"
+                android:paddingEnd="@dimen/spacing_medium"
+                android:text="@string/launcher_settings"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:layout_marginEnd="@dimen/spacing_tiny" />
+
+            <!-- All Apps Button -->
+            <Button
+                android:id="@+id/btn_open_drawer"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_secondary"
+                android:drawableStart="@drawable/ic_apps"
+                android:drawablePadding="@dimen/spacing_tiny"
+                android:paddingStart="@dimen/spacing_medium"
+                android:paddingEnd="@dimen/spacing_medium"
+                android:text="@string/all_apps"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:layout_marginStart="@dimen/spacing_tiny" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

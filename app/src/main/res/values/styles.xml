@@ -1,0 +1,68 @@
+<resources>
+    <!-- Base App Theme (KitKat API 19+ compatible) -->
+    <style name="Theme.AMPLauncher" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_variant</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <!-- Theme Variations for Setup / Settings Menu -->
+    <style name="Theme.AMPLauncher.Emerald" parent="Theme.AMPLauncher">
+        <item name="colorPrimary">@color/theme_emerald</item>
+        <item name="colorPrimaryDark">@color/theme_emerald_variant</item>
+        <item name="colorAccent">@color/theme_emerald</item>
+    </style>
+
+    <style name="Theme.AMPLauncher.Cyan" parent="Theme.AMPLauncher">
+        <item name="colorPrimary">@color/theme_cyan</item>
+        <item name="colorPrimaryDark">@color/theme_cyan_variant</item>
+        <item name="colorAccent">@color/theme_cyan</item>
+    </style>
+
+    <style name="Theme.AMPLauncher.Amber" parent="Theme.AMPLauncher">
+        <item name="colorPrimary">@color/theme_amber</item>
+        <item name="colorPrimaryDark">@color/theme_amber_variant</item>
+        <item name="colorAccent">@color/theme_amber</item>
+    </style>
+
+    <style name="Theme.AMPLauncher.Purple" parent="Theme.AMPLauncher">
+        <item name="colorPrimary">@color/theme_purple</item>
+        <item name="colorPrimaryDark">@color/theme_purple_variant</item>
+        <item name="colorAccent">@color/theme_purple</item>
+    </style>
+
+    <style name="Theme.AMPLauncher.Crimson" parent="Theme.AMPLauncher">
+        <item name="colorPrimary">@color/theme_crimson</item>
+        <item name="colorPrimaryDark">@color/theme_crimson_variant</item>
+        <item name="colorAccent">@color/theme_crimson</item>
+    </style>
+
+    <style name="Theme.AMPLauncher.Ocean" parent="Theme.AMPLauncher">
+        <item name="colorPrimary">@color/theme_ocean</item>
+        <item name="colorPrimaryDark">@color/theme_ocean_variant</item>
+        <item name="colorAccent">@color/theme_ocean</item>
+    </style>
+
+    <style name="Theme.AMPLauncher.Amoled" parent="Theme.AMPLauncher">
+        <item name="colorPrimary">@color/theme_amoled</item>
+        <item name="colorPrimaryDark">@color/theme_amoled_variant</item>
+        <item name="colorAccent">@color/theme_amoled</item>
+        <item name="android:windowBackground">#000000</item>
+    </style>
+
+    <!-- Fullscreen Launcher Themes -->
+    <style name="Theme.AMPLauncher.Fullscreen" parent="Theme.AMPLauncher">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- Backward-compatibility aliases -->
+    <style name="Theme.MusicLauncher" parent="Theme.AMPLauncher" />
+    <style name="Theme.MusicLauncher.Fullscreen" parent="Theme.AMPLauncher.Fullscreen" />
+</resources>
