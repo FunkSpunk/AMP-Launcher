@@ -103,7 +103,7 @@ music-launcher/
 1. Open **Android Studio**.
 2. Select **Open an Existing Project** and navigate to:
    ```
-   C:\Users\Funky\.gemini\antigravity\scratch\music-launcher
+   C:\Users\Funky\music-launcher
    ```
 3. Allow Gradle to sync.
 4. Connect an Android phone (or launch an emulator) running any version from Android 4.4 to Android 17.
