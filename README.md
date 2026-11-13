@@ -1,5 +1,12 @@
 # AMP Launcher | Your phone. Your music. Nothing else. ⚡🎵
 
+
+[![Release](https://img.shields.io/github/v/release/FunkSpunk/AMP-Launcher?style=flat&logo=github&label=Release)](https://github.com/FunkSpunk/AMP-Launcher/releases)
+![Android](https://img.shields.io/badge/Android-4.4%2B-3DDC84?style=flat&logo=android&logoColor=white)
+![API](https://img.shields.io/badge/API-19%2B-3DDC84?style=flat)
+![Kotlin](https://img.shields.io/badge/Kotlin-100%25-7F52FF?style=flat&logo=kotlin&logoColor=white)
+![Material 3](https://img.shields.io/badge/UI-Material%203-6750A4?style=flat)
+
 > A dedicated, high-performance Android system launcher that transforms your phone into an immersive, dedicated music player experience.  
 > Fully supports **Android 4.4 KitKat (API 19)** through the latest **Android 17 (API 35+)**.
 >
